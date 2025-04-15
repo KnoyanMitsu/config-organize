@@ -22,7 +22,7 @@ rules:
           - tex
           - ipynb
     actions:
-      - move: /home/knoyan/Documents/
+      - move: ~/Documents/
 
   - locations: 
       - ~/Downloads/
@@ -38,7 +38,7 @@ rules:
           - psd
           - webp
     actions:
-      - move: /home/knoyan/Pictures/
+      - move: ~/Pictures/
 
   - locations: 
       - ~/Downloads/
@@ -55,7 +55,7 @@ rules:
           - xz
           - 7z
     actions:
-      - move: /home/knoyan/Documents/Compress/
+      - move: ~/Documents/Compress/
 
   - locations: 
       - ~/Downloads/
@@ -75,17 +75,17 @@ rules:
           - run
           - sh
     actions:
-      - move: /home/knoyan/Documents/Executeable/
+      - move: ~/Documents/Executeable/
 
   - locations: 
-      - ~/Documents/Music/
+      - ~/Downloads/
     subfolders: true
     filters:
       - extension:
           - mp3
           - flac 
     actions:
-      - move: /home/knoyan/Music/
+      - move: ~/Music/
 
 
   - locations: 
@@ -95,4 +95,4 @@ rules:
       - extension:
           - blend
     actions:
-      - move: /home/knoyan/Documents/Blend/
+      - move: ~/Documents/Blend/
