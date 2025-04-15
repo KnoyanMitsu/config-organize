@@ -1,0 +1,98 @@
+# organize configuration file
+# https://organize.readthedocs.ig
+
+rules:
+  - locations: 
+      - ~/Downloads/
+    subfolders: true
+    filters:
+      - extension: 
+          - pdf
+          - docx
+          - txt
+          - pptx
+          - xlsx
+          - csv
+          - json
+          - drawio
+          - bak
+          - sql
+          - svg
+          - ini
+          - tex
+          - ipynb
+    actions:
+      - move: /home/knoyan/Documents/
+
+  - locations: 
+      - ~/Downloads/
+    subfolders: true 
+    filters:
+      - extension: 
+          - jpg
+          - png
+          - ipv
+          - jpeg
+          - raw
+          - dng
+          - psd
+          - webp
+    actions:
+      - move: /home/knoyan/Pictures/
+
+  - locations: 
+      - ~/Downloads/
+    subfolders: true
+    filters:
+      - extension:
+          - zip
+          - rar
+          - img
+          - jpeg
+          - tar
+          - iso
+          - gz
+          - xz
+          - 7z
+    actions:
+      - move: /home/knoyan/Documents/Compress/
+
+  - locations: 
+      - ~/Downloads/
+    subfolders: true
+    filters:
+      - extension:
+          - exe
+          - AppImage
+          - rpm
+          - zst
+          - deb
+          - msi
+          - apk
+          - ipa
+          - bash
+          - jar
+          - run
+          - sh
+    actions:
+      - move: /home/knoyan/Documents/Executeable/
+
+  - locations: 
+      - ~/Documents/Music/
+    subfolders: true
+    filters:
+      - extension:
+          - mp3
+          - flac 
+    actions:
+      - move: /home/knoyan/Music/
+
+
+  - locations: 
+      - ~/Downloads/
+    subfolders: true
+    filters:
+      - extension:
+          - blend
+    actions:
+      - move: /home/knoyan/Documents/Blend/
